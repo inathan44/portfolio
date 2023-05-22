@@ -1,5 +1,5 @@
-import CircleIcon from './circleIcon';
-import arrow from '../assets/arrow.svg';
+import CircleIcon from '../CircleIcon';
+import arrow from '../../assets/arrow.svg';
 
 const ContactButton = () => {
   return (

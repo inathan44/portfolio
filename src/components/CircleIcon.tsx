@@ -13,7 +13,7 @@ const CircleIcon = (props: CircleProps) => {
         cy={size / 2}
         r={size / 2}
         stroke='black'
-        stroke-width='0'
+        strokeWidth='0'
         fill={color}
       />
     </svg>
