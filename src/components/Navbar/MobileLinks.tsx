@@ -1,21 +1,24 @@
 import ContactButton from './ContactButton';
+import NavLink from './NavLink';
 
-const MobileLinks = () => {
+type MobileLinksProps = {
+  open: boolean;
+};
+
+const MobileLinks = (props: MobileLinksProps) => {
   return (
-    <nav className='md:hidden'>
-      <ul className='flex h-[calc(70vh)] flex-col items-center justify-center gap-6 font-semibold'>
-        <li className='border-b-4 border-transparent hover:border-mainBlue'>
-          <button>Home</button>
-        </li>
-        <li className='border-b-4 border-transparent hover:border-mainBlue'>
-          <button>About</button>
-        </li>
-        <li className='border-b-4 border-transparent hover:border-mainBlue'>
-          <button>Projects</button>
-        </li>
-        <li className='border-b-4 border-transparent font-normal'>
+    <nav className='absolute w-full bg-white md:hidden'>
+      <ul
+        className={`flex ${
+          props.open ? 'h-[calc(70vh)] pt-24' : 'h-0'
+        } flex-col items-center gap-6 overflow-hidden font-semibold transition-all`}
+      >
+        <NavLink>Home</NavLink>
+        <NavLink>About</NavLink>
+        <NavLink>Projects</NavLink>
+        <NavLink>
           <ContactButton />
-        </li>
+        </NavLink>
       </ul>
     </nav>
   );
