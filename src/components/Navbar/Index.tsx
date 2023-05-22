@@ -22,7 +22,7 @@ const Navbar = () => {
         </button>
         <DesktopLinks />
       </nav>
-      {showDropdown && <MobileLinks />}
+      <MobileLinks open={showDropdown} />
     </header>
   );
 };
