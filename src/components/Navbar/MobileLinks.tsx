@@ -7,7 +7,7 @@ type MobileLinksProps = {
 
 const MobileLinks = (props: MobileLinksProps) => {
   return (
-    <nav className='absolute w-full bg-white md:hidden'>
+    <nav className='absolute z-50 w-full bg-white md:hidden'>
       <ul
         className={`flex ${
           props.open ? 'h-[calc(70vh)] pt-24' : 'h-0'

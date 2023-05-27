@@ -1,5 +1,3 @@
-import ContactButton from './ContactButton';
-
 const DesktopLinks = () => {
   return (
     <ul className='hidden items-center gap-10 md:flex'>
@@ -12,9 +10,9 @@ const DesktopLinks = () => {
       <li className='border-b-4 border-transparent hover:border-mainBlue'>
         <button>Projects</button>
       </li>
-      <li className='border-b-4 border-transparent'>
+      {/* <li className='border-b-4 border-transparent'>
         <ContactButton />
-      </li>
+      </li> */}
     </ul>
   );
 };

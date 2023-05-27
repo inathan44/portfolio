@@ -1,5 +1,6 @@
 import './App.css';
 import Hero from './components/Hero';
+import LogoBar from './components/LogoBar';
 import Navbar from './components/Navbar/Index';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className='font-inter'>
       <Navbar />
       <Hero />
+      <LogoBar />
     </div>
   );
 }
