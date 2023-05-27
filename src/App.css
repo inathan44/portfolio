@@ -1,0 +1,25 @@
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-container {
+  width: calc(1032px * 2);
+  width: 100%;
+  display: flex;
+  animation: slide-right 12s linear infinite;
+}
+
+.logo {
+  width: 100px; /* Adjust this size as per your requirements */
+  height: auto;
+}
+
+/* @keyframes slide-right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-1056px);
+  }
+} */
