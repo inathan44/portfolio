@@ -1,12 +1,12 @@
-import heroImage from '../../assets/hero-image.png';
-import ContactButton from '../Navbar/ContactButton';
+import heroImage from '../assets/hero-image.png';
+import ContactButton from '../components/Navbar/ContactButton';
 
 const Hero = () => {
   return (
     <section className='bg-neutral'>
       <div className='flex flex-col items-center px-4 py-8 md:px-24 md:py-8'>
         <div className='flex flex-col gap-2 md:w-1/3 md:gap-8'>
-          {/* Below div holds squiggly and title text */}
+          {/* Below img holds squiggly and title text */}
           <img
             className='mx-auto w-72'
             src={'src/assets/title-underlined.png'}
