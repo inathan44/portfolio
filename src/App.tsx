@@ -1,5 +1,8 @@
+import AboutSkills from './AboutSkills';
 import './App.css';
-import Hero from './components/Hero';
+import Footer from './Footer';
+import Hero from './Hero';
+import Projects from './Projects';
 import LogoBar from './components/LogoBar';
 import Navbar from './components/Navbar/Index';
 
@@ -9,6 +12,9 @@ function App() {
       <Navbar />
       <Hero />
       <LogoBar />
+      <AboutSkills />
+      <Projects />
+      <Footer />
     </div>
   );
 }
