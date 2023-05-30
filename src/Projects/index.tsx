@@ -24,7 +24,7 @@ const Projects = () => {
       />
       <Project
         name='Lunch Buddy'
-        description='E-commerce store with elegant design and Stripe integration (Demonstration only).'
+        description='A platform to foster new connections and empowering people to connect, netowrk, and socialize.'
         link='https://lunch-buddy.netlify.app/'
         repo='https://github.com/inathan44/Lunch-Buddy'
         image='src/assets/lunchbuddy copy.png'

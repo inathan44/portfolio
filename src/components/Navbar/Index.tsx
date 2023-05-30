@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
 
   return (
-    <header>
+    <header className='sticky top-0 z-10 bg-white'>
       <nav className='flex h-16 items-center justify-between px-6'>
         <div className='flex w-28 items-center gap-1'>
           <CircleIcon color='#4791FF' size={20} />
