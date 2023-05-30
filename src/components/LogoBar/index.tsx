@@ -1,3 +1,5 @@
+import React from 'react';
+
 import reactLogo from '../../assets/react-logo.png';
 import typescriptLogo from '../../assets/typescript-logo.png';
 import javascriptLogo from '../../assets/javascript-logo.png';
@@ -27,35 +29,33 @@ const logos: string[] = [
   reduxLogo,
 ];
 
-const LOGOWIDTH = 32;
-const GAP = 24;
-const STARWIDTH = 16;
-const containerWidth =
-  logos.length * LOGOWIDTH + logos.length * STARWIDTH + logos.length * 2 * GAP;
-
-console.log(containerWidth);
+// const LOGOWIDTH = 32;
+// const GAP = 24;
+// const STARWIDTH = 16;
+// const containerWidth =
+// logos.length * LOGOWIDTH + logos.length * STARWIDTH + logos.length * 2 * GAP;
 
 const LogoBar = () => {
   return (
     <div className='logo-slider flex gap-4 bg-black'>
       <div className='logo-container  items-center justify-between gap-6 py-4'>
         {logos.map((logo, idx) => (
-          <>
+          <React.Fragment key={idx}>
             <img className='w-8' src={logo} alt={`${logo}`} />
             <img className='w-4' src={starIcon} alt='star icon' />
-          </>
+          </React.Fragment>
         ))}
         {logos.map((logo, idx) => (
-          <>
+          <React.Fragment key={idx}>
             <img className='w-8' src={logo} alt={`${logo}`} />
             <img className='w-4' src={starIcon} alt='star icon' />
-          </>
+          </React.Fragment>
         ))}
         {logos.map((logo, idx) => (
-          <>
+          <React.Fragment key={idx}>
             <img className='w-8' src={logo} alt={`${logo}`} />
             <img className='w-4' src={starIcon} alt='star icon' />
-          </>
+          </React.Fragment>
         ))}
       </div>
       {/* <div className='logo-container w-full items-center justify-between py-4'>
