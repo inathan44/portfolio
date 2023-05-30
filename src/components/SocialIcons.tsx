@@ -39,7 +39,6 @@ const SocialIcons = () => {
           <DownloadIcon />
         </div>
       </button>
-      <a href='src/assets/Ian Nathan-Resume.pdf'>OPEN ME</a>
     </div>
   );
 };
