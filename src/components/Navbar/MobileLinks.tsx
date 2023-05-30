@@ -3,6 +3,7 @@ import NavLink from './NavLink';
 
 type MobileLinksProps = {
   open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const MobileLinks = (props: MobileLinksProps) => {
@@ -13,10 +14,16 @@ const MobileLinks = (props: MobileLinksProps) => {
           props.open ? 'h-[calc(70vh)] pt-24' : 'h-0'
         } flex-col items-center gap-6 overflow-hidden font-semibold transition-all`}
       >
-        <NavLink>Home</NavLink>
-        <NavLink>About</NavLink>
-        <NavLink>Projects</NavLink>
-        <NavLink>
+        <NavLink setOpen={props.setOpen} elementId='home'>
+          Home
+        </NavLink>
+        <NavLink setOpen={props.setOpen} elementId='about'>
+          About
+        </NavLink>
+        <NavLink setOpen={props.setOpen} elementId='projects'>
+          Projects
+        </NavLink>
+        <NavLink setOpen={props.setOpen} elementId='contact'>
           <ContactButton />
         </NavLink>
       </ul>
