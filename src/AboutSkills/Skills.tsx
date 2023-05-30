@@ -1,5 +1,4 @@
 import Skill from '../components/Skill';
-import YellowBar from '../components/YellowBar';
 
 const SKILLS = [
   'React',
