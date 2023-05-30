@@ -1,19 +1,20 @@
 type NavLinkProps = {
   children: React.ReactNode;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setOpen?: React.Dispatch<React.SetStateAction<boolean>>;
   elementId: string;
+  active: string;
 };
 
 const NavLink = (props: NavLinkProps) => {
   function handleClick(): void {
-    props.setOpen(false);
+    if (props.setOpen) props.setOpen(false);
 
     const section = document.getElementById(props.elementId);
 
     const sectionCoordinates = section?.getBoundingClientRect();
 
     if (sectionCoordinates) {
-      const sectionYPosition = sectionCoordinates.top + window.pageYOffset - 90;
+      const sectionYPosition = sectionCoordinates.top + window.scrollY - 90;
 
       window.scrollTo({ behavior: 'smooth', top: sectionYPosition });
     }
@@ -23,6 +24,10 @@ const NavLink = (props: NavLinkProps) => {
     <li
       className='border-b-4 border-transparent transition-all ease-in-out hover:border-mainBlue'
       onClick={() => handleClick()}
+      style={{
+        borderColor:
+          props.active === props.elementId ? '#4791FF' : 'transparent',
+      }}
     >
       <button>{props.children}</button>
     </li>
