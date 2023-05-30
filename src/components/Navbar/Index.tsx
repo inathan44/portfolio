@@ -26,7 +26,7 @@ const Navbar = () => {
           <ContactButton />
         </div>
       </nav>
-      <MobileLinks open={showDropdown} />
+      <MobileLinks open={showDropdown} setOpen={setShowDropdown} />
     </header>
   );
 };
