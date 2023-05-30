@@ -1,5 +1,5 @@
 import CircleIcon from '../CircleIcon';
-import arrow from '../../assets/arrow.svg';
+import RightArrowIcon from './RightArrowIcon';
 
 const ContactButton = () => {
   return (
@@ -7,11 +7,7 @@ const ContactButton = () => {
       <p>Contact</p>
       <div className='relative'>
         <CircleIcon size={25} color='black' />
-        <img
-          src={arrow}
-          alt='arrow icon'
-          className='absolute left-1/2 top-1/2 w-5 -translate-x-1/2 -translate-y-1/2'
-        />
+        <RightArrowIcon />
       </div>
     </div>
   );
