@@ -3,7 +3,7 @@ import ContactButton from '../components/Navbar/ContactButton';
 
 const Hero = () => {
   return (
-    <section className='bg-neutral'>
+    <section className='bg-neutral' id='home'>
       <div className='flex flex-col items-center px-4 py-8 md:px-24 md:py-8'>
         <div className='flex flex-col gap-2 md:w-1/3 md:gap-8'>
           {/* Below img holds squiggly and title text */}

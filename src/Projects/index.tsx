@@ -2,7 +2,7 @@ import Project from './Project';
 
 const Projects = () => {
   return (
-    <div className='mx-4 flex flex-col gap-6'>
+    <div className='mx-4 flex flex-col gap-6' id='projects'>
       <h4 className='mt-10 text-3xl font-semibold '>Projects</h4>
       <Project
         name='Quick Type'

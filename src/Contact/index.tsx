@@ -2,7 +2,7 @@ import Form from './Form';
 
 const Contact = () => {
   return (
-    <section className='bg-black py-12 '>
+    <section className='bg-black py-12' id='contact'>
       <div className='mx-6 flex flex-col gap-6'>
         <h5 className='text-2xl font-bold text-white'>Contact Me</h5>
         <p className='text-3xl font-bold text-mainBlue'>

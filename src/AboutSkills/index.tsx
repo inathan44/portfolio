@@ -3,7 +3,7 @@ import Skills from './Skills';
 
 const AboutSkills = () => {
   return (
-    <div className='my-8'>
+    <div className='my-8' id='about'>
       <About />
       <Skills />
     </div>
