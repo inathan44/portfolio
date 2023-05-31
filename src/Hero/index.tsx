@@ -1,4 +1,6 @@
 import ContactButton from '../components/Navbar/ContactButton';
+import heroImage from '../assets/hero-image.png';
+import nameImage from '../assets/title-underlined.png';
 
 const Hero = () => {
   function handleClick(elementId: string): void {
@@ -20,7 +22,7 @@ const Hero = () => {
           {/* Below img holds squiggly and title text */}
           <img
             className='w-84 mx-auto'
-            src={'src/assets/title-underlined.png'}
+            src={nameImage}
             alt='Squiggly underline'
           />
           <h2 className='text-lg text-offBlack'>
@@ -30,7 +32,7 @@ const Hero = () => {
         </div>
 
         <img
-          src={'src/assets/hero-image.png'}
+          src={heroImage}
           alt='Code snippet with coding language logos'
           className='mx-auto ml-auto w-5/6 md:w-1/2'
         />

@@ -1,8 +1,11 @@
 import DownloadIcon from './DownloadIcon';
+import linkedInLogo from '../assets/linkedin-logo.png';
+import githubLogo from '../assets/github-logo.png';
+import resume from '../assets/Ian Nathan-Resume.pdf';
 
 const SocialIcons = () => {
   function openResume() {
-    window.open('/src/assets/Ian Nathan-Resume.pdf', '_blank');
+    window.open(resume, '_blank');
   }
   return (
     <div className='flex items-center gap-4'>
@@ -11,22 +14,14 @@ const SocialIcons = () => {
         rel='noopener noreferrer'
         href='https://www.linkedin.com/in/ianmnathan/'
       >
-        <img
-          src='src/assets/linkedin-logo.png'
-          alt='LinkedIn Logo'
-          className='h-10 w-10'
-        />
+        <img src={linkedInLogo} alt='LinkedIn Logo' className='h-10 w-10' />
       </a>
       <a
         href='https://github.com/inathan44'
         target='_blank'
         rel='noopener noreferrer'
       >
-        <img
-          src='src/assets/github-logo.png'
-          alt='LinkedIn Logo'
-          className='h-10 w-10'
-        />
+        <img src={githubLogo} alt='LinkedIn Logo' className='h-10 w-10' />
       </a>
       <button
         onClick={openResume}

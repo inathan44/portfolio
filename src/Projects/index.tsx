@@ -1,4 +1,7 @@
 import Project from './Project';
+import quickTypeImage from '../assets/typing-ss copy.png';
+import plantsImage from '../assets/plants-combined copy.png';
+import lunchImage from '../assets/lunchbuddy copy.png';
 
 const Projects = () => {
   return (
@@ -14,7 +17,7 @@ const Projects = () => {
         description='Typing site to improve speed, track progress over time, and climb leaderboards.'
         link='https://quick-type.netlify.app'
         repo='https://github.com/Andrew-org-TM/Quick-Type'
-        image='src/assets/typing-ss copy.png'
+        image={quickTypeImage}
         color='#059669'
         buttonTextBlack={false}
       />
@@ -23,7 +26,7 @@ const Projects = () => {
         description='E-commerce store with elegant design and Stripe integration (Demonstration only).'
         link='https://plants-and.co'
         repo='https://github.com/inathan44/plants-and-co'
-        image='src/assets/plants-combined copy.png'
+        image={plantsImage}
         color='#14332D'
         buttonTextBlack={false}
       />
@@ -32,7 +35,7 @@ const Projects = () => {
         description='A platform to foster new connections and empowering people to connect, network, and socialize.'
         link='https://lunch-buddy.netlify.app/'
         repo='https://github.com/inathan44/Lunch-Buddy'
-        image='src/assets/lunchbuddy copy.png'
+        image={lunchImage}
         color='#F68080'
         buttonTextBlack={false}
       />

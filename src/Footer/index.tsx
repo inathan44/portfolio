@@ -1,4 +1,5 @@
 import SocialIcons from '../components/SocialIcons';
+import headshot from '../assets/headshot.jpg';
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className='flex flex-col px-6 sm:flex-row sm:items-center sm:justify-between sm:px-12'>
           <div className='flex items-center gap-4'>
             <img
-              src='src/assets/headshot.JPG'
+              src={headshot}
               alt='Photo of Ian'
               className='mt-8 aspect-square w-28 rounded-full object-cover'
             />
