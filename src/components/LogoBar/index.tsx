@@ -1,17 +1,17 @@
 import React from 'react';
 
 const logos: string[] = [
-  'src/assets/react-logo.png',
-  'src/assets/typescript-logo.png',
-  'src/assets/JavaScript-logo.png',
-  'src/assets/tailwind-logo.png',
-  'src/assets/python-logo.png',
-  'src/assets/firebase-logo.png',
-  'src/assets/css-logo.png',
-  'src/assets/html-logo.png',
-  'src/assets/postgres.png',
-  'src/assets/supabase-logo.png',
-  'src/assets/redux-logo.png',
+  '/src/assets/react-logo.png',
+  '/src/assets/typescript-logo.png',
+  '/src/assets/JavaScript-logo.png',
+  '/src/assets/tailwind-logo.png',
+  '/src/assets/python-logo.png',
+  '/src/assets/firebase-logo.png',
+  '/src/assets/css-logo.png',
+  '/src/assets/html-logo.png',
+  '/src/assets/postgres.png',
+  '/src/assets/supabase-logo.png',
+  '/src/assets/redux-logo.png',
 ];
 
 // const LOGOWIDTH = 32;
