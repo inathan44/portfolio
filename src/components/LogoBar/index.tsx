@@ -1,17 +1,32 @@
 import React from 'react';
 
+import reactLogo from '/../../assets/react-logo.png';
+import typescriptLogo from '../../assets/typescript-logo.png';
+import javascriptLogo from '../../assets/javascript-logo.png';
+import cssLogo from '../../assets/css-logo.png';
+import pythonLogo from '../../assets/python-logo.png';
+import htmlLogo from '../../assets/html-logo.png';
+import firebaseLogo from '../../assets/firebase-logo.png';
+import supabaseLogo from '../../assets/supabase-logo.png';
+import postgresLogo from '../../assets/postgres.png';
+import reduxLogo from '../../assets/redux-logo.png';
+import tailwindLogo from '../../assets/tailwind-logo.png';
+import starIcon from '../../assets/star.png';
+
+// import '../../App.css';
+
 const logos: string[] = [
-  '/assets/react-logo.png',
-  'assets/typescript-logo.png',
-  '/src/assets/JavaScript-logo.png',
-  '/src/assets/tailwind-logo.png',
-  '/src/assets/python-logo.png',
-  '/src/assets/firebase-logo.png',
-  '/src/assets/css-logo.png',
-  '/src/assets/html-logo.png',
-  '/src/assets/postgres.png',
-  '/src/assets/supabase-logo.png',
-  '/src/assets/redux-logo.png',
+  reactLogo,
+  typescriptLogo,
+  javascriptLogo,
+  tailwindLogo,
+  pythonLogo,
+  firebaseLogo,
+  cssLogo,
+  htmlLogo,
+  postgresLogo,
+  supabaseLogo,
+  reduxLogo,
 ];
 
 // const LOGOWIDTH = 32;
@@ -27,22 +42,30 @@ const LogoBar = () => {
         {logos.map((logo, idx) => (
           <React.Fragment key={idx}>
             <img className='w-8' src={logo} alt={`${logo}`} />
-            <img className='w-4' src={'src/assets/star.png'} alt='star icon' />
+            <img className='w-4' src={starIcon} alt='star icon' />
           </React.Fragment>
         ))}
         {logos.map((logo, idx) => (
           <React.Fragment key={idx}>
             <img className='w-8' src={logo} alt={`${logo}`} />
-            <img className='w-4' src={'src/assets/star.png'} alt='star icon' />
+            <img className='w-4' src={starIcon} alt='star icon' />
           </React.Fragment>
         ))}
-        {logos.map((logo, idx) => (
+        {/* {logos.map((logo, idx) => (
           <React.Fragment key={idx}>
             <img className='w-8' src={logo} alt={`${logo}`} />
-            <img className='w-4' src={'src/assets/star.png'} alt='star icon' />
+            <img className='w-4' src={starIcon} alt='star icon' />
           </React.Fragment>
-        ))}
+        ))} */}
       </div>
+      {/* <div className='logo-container w-full items-center justify-between py-4'>
+        {logos.map((logo, idx) => (
+          <>
+            <img className='h-8' src={logo} alt={`${logo}`} />
+            <img className='h-4' src={starIcon} alt='star icon' />
+          </>
+        ))}
+      </div> */}
     </div>
   );
 };
