@@ -1,8 +1,8 @@
 import React from 'react';
 
-import reactLogo from '/../../assets/react-logo.png';
+import reactLogo from '../../assets/react-logo.png';
 import typescriptLogo from '../../assets/typescript-logo.png';
-import javascriptLogo from '../../assets/javascript-logo.png';
+import javascriptLogo from '../../assets/JavaScript-logo.png';
 import cssLogo from '../../assets/css-logo.png';
 import pythonLogo from '../../assets/python-logo.png';
 import htmlLogo from '../../assets/html-logo.png';
