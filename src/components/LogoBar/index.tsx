@@ -1,8 +1,8 @@
 import React from 'react';
 
 const logos: string[] = [
-  '/src/assets/react-logo.png',
-  '/src/assets/typescript-logo.png',
+  '/assets/react-logo.png',
+  'assets/typescript-logo.png',
   '/src/assets/JavaScript-logo.png',
   '/src/assets/tailwind-logo.png',
   '/src/assets/python-logo.png',
