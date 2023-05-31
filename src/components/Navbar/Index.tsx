@@ -4,6 +4,7 @@ import menuIcon from '../../assets/menu.svg';
 import { useState } from 'react';
 import MobileLinks from './MobileLinks';
 import ContactButton from './ContactButton';
+import MenuIcon from '../MenuIcon';
 
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
           onClick={() => setShowDropdown((prev) => !prev)}
           className='block md:hidden'
         >
-          <img className='w-8' src={menuIcon} alt='Three bar menu icon' />
+          <MenuIcon />
         </button>
         <DesktopLinks />
         <div className='hidden md:block'>

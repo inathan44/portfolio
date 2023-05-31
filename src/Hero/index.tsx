@@ -1,4 +1,3 @@
-import heroImage from '../assets/hero-image.png';
 import ContactButton from '../components/Navbar/ContactButton';
 
 const Hero = () => {
@@ -31,7 +30,7 @@ const Hero = () => {
         </div>
 
         <img
-          src={heroImage}
+          src={'src/assets/hero-image.png'}
           alt='Code snippet with coding language logos'
           className='mx-auto ml-auto w-5/6 md:w-1/2'
         />
