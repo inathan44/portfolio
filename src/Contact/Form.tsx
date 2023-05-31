@@ -13,7 +13,7 @@ const Form = () => {
 
   return (
     <form
-      className='flex flex-col items-center gap-4 rounded'
+      className='flex flex-col items-center gap-4 rounded md:mx-auto md:inline-block md:max-w-2xl'
       onSubmit={(e) => handleSubmit(e)}
     >
       <input
@@ -24,7 +24,7 @@ const Form = () => {
         placeholder='Name'
       />
       <input
-        className='w-full rounded border px-2 py-2 placeholder:text-slate-700'
+        className='w-full rounded border px-2 py-2 placeholder:text-slate-700 md:my-4'
         type='email'
         value={email}
         onChange={(e) => setEmail(e.target.value)}

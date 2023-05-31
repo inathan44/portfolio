@@ -51,12 +51,12 @@ const LogoBar = () => {
             <img className='w-4' src={starIcon} alt='star icon' />
           </React.Fragment>
         ))}
-        {logos.map((logo, idx) => (
+        {/* {logos.map((logo, idx) => (
           <React.Fragment key={idx}>
             <img className='w-8' src={logo} alt={`${logo}`} />
             <img className='w-4' src={starIcon} alt='star icon' />
           </React.Fragment>
-        ))}
+        ))} */}
       </div>
       {/* <div className='logo-container w-full items-center justify-between py-4'>
         {logos.map((logo, idx) => (

@@ -2,8 +2,13 @@ import Project from './Project';
 
 const Projects = () => {
   return (
-    <div className='mx-4 flex flex-col gap-6' id='projects'>
-      <h4 className='mt-10 text-3xl font-semibold '>Projects</h4>
+    <div
+      className='mx-4 flex flex-col gap-6 sm:mx-auto sm:max-w-md md:max-w-none md:px-8'
+      id='projects'
+    >
+      <h4 className='mt-10 text-3xl font-semibold md:text-center md:text-4xl'>
+        Projects
+      </h4>
       <Project
         name='Quick Type'
         description='Typing site to improve speed, track progress over time, and climb leaderboards.'
@@ -24,7 +29,7 @@ const Projects = () => {
       />
       <Project
         name='Lunch Buddy'
-        description='A platform to foster new connections and empowering people to connect, netowrk, and socialize.'
+        description='A platform to foster new connections and empowering people to connect, network, and socialize.'
         link='https://lunch-buddy.netlify.app/'
         repo='https://github.com/inathan44/Lunch-Buddy'
         image='src/assets/lunchbuddy copy.png'

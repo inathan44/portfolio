@@ -13,7 +13,7 @@ const projectSection = document.getElementById('projects');
 const contactSection = document.getElementById('contact');
 
 const MobileLinks = (props: MobileLinksProps) => {
-  const [activeSection, setActiveSection] = useState<string>('');
+  const [activeSection, setActiveSection] = useState<string>('home');
 
   const handleScroll = () => {
     const windowPosition = window.scrollY;

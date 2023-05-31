@@ -7,7 +7,7 @@
   width: calc(1032px * 2);
   width: 100%;
   display: flex;
-  animation: slide-right 12s linear infinite;
+  animation: slide-right 3s linear infinite;
 }
 
 .logo {
@@ -15,11 +15,17 @@
   height: auto;
 }
 
-/* @keyframes slide-right {
-  0% {
-    transform: translateX(0%);
+@media screen and (max-width: 1400px) {
+  @keyframes slide-right {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-1056px);
+    }
   }
-  100% {
-    transform: translateX(-1056px);
+
+  .logo-container {
+    animation: slide-right 30s linear infinite;
   }
-} */
+}

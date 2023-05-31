@@ -10,8 +10,12 @@ type ProjectProps = {
 
 const Project = (props: ProjectProps) => {
   return (
-    <div className='flex flex-col gap-5 rounded-3xl border bg-slate-200 pb-4'>
-      <img src={props.image} alt={`screenshot mockups of ${props.name}`} />
+    <div className='flex flex-col gap-5 rounded-3xl border bg-slate-200 pb-4 md:mx-auto md:max-w-4xl md:flex-row md:items-center md:pb-0'>
+      <img
+        src={props.image}
+        alt={`screenshot mockups of ${props.name}`}
+        className=' md:w-1/2 md:rounded'
+      />
       <div className='mx-4 flex flex-col gap-2'>
         <h5 className='text-4xl font-semibold '>{props.name}</h5>
         <p className='mt-4 text-slate-800'>{props.description}</p>
