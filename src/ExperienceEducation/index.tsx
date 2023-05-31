@@ -2,7 +2,7 @@ import BulletPoint from './BulletPoint';
 
 const EducationExperience = () => {
   return (
-    <section className=''>
+    <section className='' id='experience'>
       <div className='mx-6 mt-16'>
         <h4 className='my-8 text-3xl font-bold md:text-center'>
           Education & <span className='text-mainBlue'>Experience</span>

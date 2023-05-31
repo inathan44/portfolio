@@ -10,8 +10,9 @@ const DesktopLinks = () => {
     const aboutSection = document.getElementById('about');
     const projectSection = document.getElementById('projects');
     const contactSection = document.getElementById('contact');
+    const experienceSection = document.getElementById('experience');
 
-    if (aboutSection && projectSection && contactSection) {
+    if (aboutSection && projectSection && contactSection && experienceSection) {
       const aboutSectionPosition =
         aboutSection?.getBoundingClientRect().top + windowPosition - 90;
 
@@ -21,7 +22,12 @@ const DesktopLinks = () => {
       const contactSectionPosition =
         contactSection?.getBoundingClientRect().top + windowPosition - 90;
 
-      if (windowPosition > contactSectionPosition) {
+      const experienceSectionPosition =
+        experienceSection?.getBoundingClientRect().top + windowPosition - 90;
+
+      if (windowPosition > experienceSectionPosition) {
+        setActiveSection('experience');
+      } else if (windowPosition > contactSectionPosition) {
         setActiveSection('contact');
       } else if (windowPosition > projectSectionPosition) {
         setActiveSection('projects');
@@ -51,6 +57,9 @@ const DesktopLinks = () => {
       </NavLink>
       <NavLink elementId='projects' active={activeSection}>
         Projects
+      </NavLink>
+      <NavLink elementId='experience' active={activeSection}>
+        Experience
       </NavLink>
     </ul>
   );

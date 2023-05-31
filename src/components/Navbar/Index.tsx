@@ -8,6 +8,20 @@ import MenuIcon from '../MenuIcon';
 const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
 
+  function handleClick(): void {
+    if (showDropdown) setShowDropdown(false);
+
+    const section = document.getElementById('contact');
+
+    const sectionCoordinates = section?.getBoundingClientRect();
+
+    if (sectionCoordinates) {
+      const sectionYPosition = sectionCoordinates.top + window.scrollY - 80;
+
+      window.scrollTo({ top: sectionYPosition, behavior: 'smooth' });
+    }
+  }
+
   return (
     <header className='sticky top-0 z-10 bg-white'>
       <nav className='flex h-16 items-center justify-between px-6'>
@@ -22,9 +36,9 @@ const Navbar = () => {
           <MenuIcon />
         </button>
         <DesktopLinks />
-        <div className='hidden md:block'>
+        <button className='hidden md:block' onClick={handleClick}>
           <ContactButton />
-        </div>
+        </button>
       </nav>
       <MobileLinks open={showDropdown} setOpen={setShowDropdown} />
     </header>

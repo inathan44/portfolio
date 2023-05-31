@@ -14,9 +14,9 @@ const NavLink = (props: NavLinkProps) => {
     const sectionCoordinates = section?.getBoundingClientRect();
 
     if (sectionCoordinates) {
-      const sectionYPosition = sectionCoordinates.top + window.scrollY - 90;
+      const sectionYPosition = sectionCoordinates.top + window.scrollY - 80;
 
-      window.scrollTo({ top: sectionYPosition });
+      window.scrollTo({ top: sectionYPosition, behavior: 'smooth' });
     }
   }
 

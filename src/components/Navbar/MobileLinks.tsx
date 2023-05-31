@@ -78,6 +78,13 @@ const MobileLinks = (props: MobileLinksProps) => {
         </NavLink>
         <NavLink
           setOpen={props.setOpen}
+          elementId='experience'
+          active={activeSection}
+        >
+          Experience
+        </NavLink>
+        <NavLink
+          setOpen={props.setOpen}
           elementId='contact'
           active={activeSection}
         >
