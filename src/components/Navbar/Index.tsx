@@ -1,6 +1,5 @@
 import CircleIcon from '../CircleIcon';
 import DesktopLinks from './DesktopLinks';
-import menuIcon from '../../assets/menu.svg';
 import { useState } from 'react';
 import MobileLinks from './MobileLinks';
 import ContactButton from './ContactButton';
