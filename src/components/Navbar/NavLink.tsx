@@ -1,3 +1,6 @@
+import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 type NavLinkProps = {
   children: React.ReactNode;
   setOpen?: React.Dispatch<React.SetStateAction<boolean>>;
@@ -6,7 +9,14 @@ type NavLinkProps = {
 };
 
 const NavLink = (props: NavLinkProps) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const onHomePage = location.pathname === '/';
+
   function handleClick(): void {
+    navigate('/');
+
     if (props.setOpen) props.setOpen(false);
 
     const section = document.getElementById(props.elementId);
@@ -26,7 +36,9 @@ const NavLink = (props: NavLinkProps) => {
       onClick={() => handleClick()}
       style={{
         borderColor:
-          props.active === props.elementId ? '#4791FF' : 'transparent',
+          props.active === props.elementId && onHomePage
+            ? '#4791FF'
+            : 'transparent',
       }}
     >
       <button>{props.children}</button>

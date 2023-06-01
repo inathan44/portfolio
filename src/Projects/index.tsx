@@ -16,7 +16,7 @@ const Projects = () => {
         name='Quick Type'
         description='Typing site to improve speed, track progress over time, and climb leaderboards.'
         link='https://quick-type.netlify.app'
-        repo='https://github.com/Andrew-org-TM/Quick-Type'
+        learnMore='quicktype'
         image={quickTypeImage}
         color='#059669'
         buttonTextBlack={false}
@@ -25,7 +25,7 @@ const Projects = () => {
         name='Plants&Co'
         description='E-commerce store with elegant design and Stripe integration (Demonstration only).'
         link='https://plants-and.co'
-        repo='https://github.com/inathan44/plants-and-co'
+        learnMore='plantsco'
         image={plantsImage}
         color='#14332D'
         buttonTextBlack={false}
@@ -34,7 +34,7 @@ const Projects = () => {
         name='Lunch Buddy'
         description='A platform to foster new connections and empowering people to connect, network, and socialize.'
         link='https://lunch-buddy.netlify.app/'
-        repo='https://github.com/inathan44/Lunch-Buddy'
+        learnMore='lunchbuddy'
         image={lunchImage}
         color='#F68080'
         buttonTextBlack={false}

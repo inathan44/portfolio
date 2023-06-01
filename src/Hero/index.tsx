@@ -39,7 +39,7 @@ const Hero = () => {
       </div>
       <div className='flex w-full justify-center gap-8 py-4'>
         <button
-          className='w-28 rounded-full border border-black bg-mainBlue'
+          className='w-28 rounded-full border border-black bg-mainBlue transition-all hover:brightness-90'
           onClick={() => handleClick('about')}
         >
           About me

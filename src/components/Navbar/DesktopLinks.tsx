@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import NavLink from './NavLink';
 
 const DesktopLinks = () => {
-  const [activeSection, setActiveSection] = useState<string>('home');
+  const [activeSection, setActiveSection] = useState<string>('');
 
   function handleScroll() {
     const windowPosition = window.scrollY;
@@ -45,7 +45,12 @@ const DesktopLinks = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeSection]);
+
+  useEffect(() => {
+    return setActiveSection('home');
+  }, []);
 
   return (
     <ul className='hidden items-center gap-10 md:flex'>

@@ -93,7 +93,7 @@ const Form = () => {
         style={messageError ? errorStyles : {}}
       />
       <button
-        className={`mt-3 flex items-center gap-3 self-start rounded-full bg-mainBlue px-4 ${
+        className={`mt-3 flex items-center gap-3 self-start rounded-full bg-mainBlue px-4 transition-all hover:brightness-90 ${
           messageSending ? 'py-5' : 'py-2'
         } text-lg`}
       >

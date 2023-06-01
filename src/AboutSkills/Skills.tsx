@@ -5,15 +5,15 @@ const SKILLS = [
   'React',
   'JS',
   'Typescript',
+  'Express',
+  'Node',
   'HTML',
   'CSS',
   'Python',
   'Tailwind CSS',
   'Web Development',
-  'Data Analysis',
   'Excel',
   'SQL',
-  'Supabase',
 ];
 
 const Skills = () => {
