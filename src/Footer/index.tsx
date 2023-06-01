@@ -29,6 +29,7 @@ const Footer = () => {
       </div>
       <div className='border-t-4 border-slate-700 py-4 text-center text-xs'>
         <p>&copy; {new Date().getFullYear()} Ian Nathan</p>
+        <a href='https://icons8.com'>Icons from Icons8</a>
       </div>
     </footer>
   );
