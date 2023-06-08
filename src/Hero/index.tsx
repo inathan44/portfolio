@@ -17,25 +17,22 @@ const Hero = () => {
 
   return (
     <section className='bg-neutral' id='home'>
-      <div className='mx-auto flex max-w-md flex-col items-center px-4 py-8 md:max-w-2xl md:flex-row'>
+      <div className='mx-auto flex max-w-md flex-col items-center px-4 py-8 md:max-w-2xl md:flex-row md:justify-center md:gap-12'>
         <div className='flex flex-col gap-2 md:w-1/2'>
           {/* Below img holds squiggly and title text */}
-          <img
-            className='w-84 mx-auto'
-            src={nameImage}
-            alt='Squiggly underline'
-          />
-          <h2 className='text-lg text-offBlack'>
-            Full stack engineer building beautiful web apps that are easy to
-            use.
+          <img className='mx-auto' src={nameImage} alt='Squiggly underline' />
+          <h2 className='text-center text-lg text-offBlack'>
+            Full stack software engineer
           </h2>
         </div>
 
-        <img
-          src={heroImage}
-          alt='Code snippet with coding language logos'
-          className='mx-auto ml-auto w-5/6 md:w-1/2'
-        />
+        <div className='md:w-1/2'>
+          <img
+            src={heroImage}
+            alt='Code snippet with coding language logos'
+            className='mx-auto ml-auto w-5/6 md:w-full'
+          />
+        </div>
       </div>
       <div className='flex w-full justify-center gap-8 py-4'>
         <button
