@@ -1,6 +1,7 @@
 import ContactButton from '../components/Navbar/ContactButton';
 import heroImage from '../assets/hero-image.png';
 import nameImage from '../assets/title-underlined.png';
+import SocialIcons from '../components/SocialIcons';
 
 const Hero = () => {
   function handleClick(elementId: string): void {
@@ -44,6 +45,9 @@ const Hero = () => {
         <div onClick={() => handleClick('contact')}>
           <ContactButton />
         </div>
+      </div>
+      <div className='hidden justify-center md:flex'>
+        <SocialIcons />
       </div>
     </section>
   );

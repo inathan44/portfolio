@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import ContactButton from './ContactButton';
 import NavLink from './NavLink';
+import SocialIcons from '../SocialIcons';
 
 type MobileLinksProps = {
   open: boolean;
@@ -52,7 +53,7 @@ const MobileLinks = (props: MobileLinksProps) => {
     <nav className='absolute z-50 w-full bg-white md:hidden'>
       <ul
         className={`flex ${
-          props.open ? 'h-[calc(70vh)] pt-24' : 'h-0'
+          props.open ? 'h-[calc(70vh)] pt-20' : 'h-0'
         } flex-col items-center gap-6 overflow-hidden font-semibold transition-all`}
       >
         <NavLink
@@ -90,6 +91,7 @@ const MobileLinks = (props: MobileLinksProps) => {
         >
           <ContactButton />
         </NavLink>
+        <SocialIcons />
       </ul>
     </nav>
   );
