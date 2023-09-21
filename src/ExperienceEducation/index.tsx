@@ -10,21 +10,26 @@ const EducationExperience = () => {
         <div className='flex justify-center'>
           <ol className='relative mx-auto border-l border-gray-200'>
             <BulletPoint
+              date='2023 - Present'
+              description='Software Developer (Contract)'
+              title='Grizz'
+              color='#4791FF'
+            />
+            <BulletPoint
               date='2023'
               title='Fullstack Academy'
               description='Fullstack Web Development Bootcamp'
-              color='#4791FF'
             />
 
-            <BulletPoint
-              date='2020 - Present'
-              title='Excel Consultant'
-              description='Spreadsheet Automation, VBA/Macro Scripts'
-            />
             <BulletPoint
               date='2018 - Present'
               title='Starbucks'
               description='Supervisor, Trainer'
+            />
+            <BulletPoint
+              date='2020 - 2023'
+              title='Excel Consultant'
+              description='Spreadsheet Automation, VBA/Macro Scripts'
             />
             <BulletPoint
               date='2021'
