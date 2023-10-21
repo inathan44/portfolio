@@ -29,7 +29,7 @@ const ProjectDetails = () => {
           <div className=''>
             <div className='my-4 flex justify-center gap-8 text-lg'>
               <a
-                className='w-32 rounded-full bg-mainBlue py-2 text-center transition-all hover:brightness-90'
+                className='w-32 rounded-full bg-mainBlue py-2 text-center text-white transition-all hover:brightness-90'
                 href={currentProject.links.site}
                 target='_blank'
                 rel='noopener noreferrer'

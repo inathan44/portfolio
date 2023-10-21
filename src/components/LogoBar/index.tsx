@@ -37,7 +37,7 @@ const logos: string[] = [
 
 const LogoBar = () => {
   return (
-    <div className='logo-slider flex gap-4 bg-black'>
+    <div className='logo-slider flex gap-4 border-y border-[#DDDDDD] bg-white'>
       <div className='logo-container  items-center justify-between gap-6 py-4'>
         {logos.map((logo, idx) => (
           <React.Fragment key={idx}>

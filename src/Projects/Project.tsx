@@ -23,7 +23,7 @@ const Project = (props: ProjectProps) => {
         <p className='mt-4 text-slate-800'>{props.description}</p>
         <div className='my-4 flex justify-center gap-8 text-lg'>
           <a
-            className='w-32 rounded-full bg-mainBlue py-2 text-center transition-all hover:brightness-90'
+            className='w-32 rounded-full bg-mainBlue  py-2 text-center text-white transition-all hover:brightness-90'
             href={props.link}
             target='_blank'
             rel='noopener noreferrer'
