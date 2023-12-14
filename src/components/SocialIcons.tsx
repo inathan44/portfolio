@@ -1,7 +1,7 @@
 import DownloadIcon from './DownloadIcon';
 import linkedInLogo from '../assets/linkedin-logo.png';
 import githubLogo from '../assets/github-logo.png';
-import resume from '../assets/Ian_Nathan_Resume_September.pdf';
+import resume from '../assets/Ian_Nathan_Resume_December.pdf';
 
 const SocialIcons = () => {
   function openResume() {

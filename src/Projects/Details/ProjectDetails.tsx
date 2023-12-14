@@ -69,7 +69,7 @@ const ProjectDetails = () => {
       <div>
         <h3 className='text-center text-2xl md:mt-10'>Tech Stack</h3>
         <div className='mx-4 mb-8 flex flex-col gap-5 px-8 py-6'>
-          <div className='mx-auto grid grid-cols-2 gap-4 md:grid md:grid-cols-2 md:grid-cols-4 lg:grid-cols-3'>
+          <div className='mx-auto grid grid-cols-2 gap-4 md:grid md:grid-cols-2 lg:grid-cols-3'>
             {currentProject.technologies.map(
               (tech: Technologies, idx: number) => (
                 <React.Fragment key={idx}>

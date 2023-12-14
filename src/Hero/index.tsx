@@ -23,7 +23,7 @@ const Hero = () => {
           {/* Below img holds squiggly and title text */}
           <img className='mx-auto' src={nameImage} alt='Squiggly underline' />
           <h2 className='text-center text-lg text-offBlack'>
-            Full stack software engineer
+            Software engineer
           </h2>
         </div>
 

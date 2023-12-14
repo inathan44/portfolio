@@ -10,10 +10,22 @@ const EducationExperience = () => {
         <div className='flex justify-center'>
           <ol className='relative mx-auto border-l border-gray-200'>
             <BulletPoint
+              date='2023'
+              description='AWS Certified Cloud Practitioner'
+              title='Amazon Web Services (AWS)'
+              color='#4791FF'
+            />
+            <BulletPoint
+              date='2023 - Present'
+              description='Technical Services'
+              title='Regent Education'
+              href='https://www.regenteducation.com/'
+            />
+            <BulletPoint
               date='2023 - Present'
               description='Software Developer (Contract)'
               title='Grizz'
-              color='#4791FF'
+              href='https://www.getgrizz.com/'
             />
             <BulletPoint
               date='2023'
@@ -22,7 +34,7 @@ const EducationExperience = () => {
             />
 
             <BulletPoint
-              date='2018 - Present'
+              date='2018 - 2023'
               title='Starbucks'
               description='Supervisor, Trainer'
             />

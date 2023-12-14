@@ -5,9 +5,16 @@ type BulletPointProps = {
   title: string;
   description: string;
   color?: string;
+  href?: string;
 };
 
-const BulletPoint = ({ date, title, description, color }: BulletPointProps) => {
+const BulletPoint = ({
+  date,
+  title,
+  description,
+  color,
+  href,
+}: BulletPointProps) => {
   return (
     <li className='mb-10 ml-4'>
       <div
@@ -23,9 +30,20 @@ const BulletPoint = ({ date, title, description, color }: BulletPointProps) => {
             {date}
           </time>
         </div>
-        <h3 className='text-lg font-semibold text-gray-900 md:text-xl'>
-          {title}
-        </h3>
+        {href ? (
+          <a
+            className='text-lg font-semibold text-gray-900 hover:underline md:text-xl'
+            href={href}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {title}
+          </a>
+        ) : (
+          <h3 className='text-lg font-semibold text-gray-900 md:text-xl'>
+            {title}
+          </h3>
+        )}
         <p className='mb-4 text-sm font-normal text-gray-500 md:text-base'>
           {description}
         </p>
