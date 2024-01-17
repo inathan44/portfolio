@@ -1,7 +1,7 @@
 import Project from './Project';
 import quickTypeImage from '../assets/typing-ss copy.png';
 import plantsImage from '../assets/plants-combined copy.png';
-import lunchImage from '../assets/lunchbuddy copy.png';
+import grizzImage from '../assets/DashboardScreenshot.png';
 
 const Projects = () => {
   return (
@@ -12,6 +12,14 @@ const Projects = () => {
       <h4 className='mt-10 text-3xl font-semibold md:text-center md:text-4xl'>
         Projects
       </h4>
+      <Project
+        name='Grizz'
+        description='Lead generation SaaS platform to expedite sales prospecting through refined job listing searches, cutting prospecting process by over 90%'
+        link='https://getgrizz.com/'
+        image={grizzImage}
+        color='#F68080'
+        buttonTextBlack={false}
+      />
       <Project
         name='Quick Type'
         description='Typing site to improve speed, track progress over time, and climb leaderboards.'
@@ -28,15 +36,6 @@ const Projects = () => {
         learnMore='plantsco'
         image={plantsImage}
         color='#14332D'
-        buttonTextBlack={false}
-      />
-      <Project
-        name='Lunch Buddy'
-        description='A platform to foster new connections and empowering people to connect, network, and socialize.'
-        link='https://lunch-buddy.netlify.app/'
-        learnMore='lunchbuddy'
-        image={lunchImage}
-        color='#F68080'
         buttonTextBlack={false}
       />
     </div>

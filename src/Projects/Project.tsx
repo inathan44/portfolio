@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 type ProjectProps = {
   name: string;
   description: string;
-  link: string;
-  learnMore: string;
+  link?: string;
+  learnMore?: string;
   image: string;
   color: string;
   buttonTextBlack: boolean;
@@ -23,19 +23,23 @@ const Project = (props: ProjectProps) => {
         <p className='mt-4 text-slate-800'>{props.description}</p>
         <div className='my-4 flex justify-center gap-8 text-lg'>
           <a
-            className='w-32 rounded-full bg-mainBlue  py-2 text-center text-white transition-all hover:brightness-90'
+            className='w-32 rounded-full bg-mainBlue py-2 text-center text-white transition-all hover:brightness-90'
             href={props.link}
             target='_blank'
             rel='noopener noreferrer'
           >
             Site
           </a>
-          <Link
-            className='w-32 rounded-full bg-black py-2 text-center text-white transition-all hover:bg-slate-800'
-            to={`/projects/${props.learnMore}`}
-          >
-            About
-          </Link>
+          {props.learnMore ? (
+            <Link
+              className='w-32 rounded-full bg-black py-2 text-center text-white transition-all hover:bg-slate-800'
+              to={`/projects/${props.learnMore}`}
+            >
+              About
+            </Link>
+          ) : (
+            <div></div>
+          )}
         </div>
       </div>
     </div>
