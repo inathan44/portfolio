@@ -21,7 +21,7 @@ const Footer = () => {
             <p className='my-8 text-2xl font-bold'>Get in touch</p>
             <p className='text-sm'>Email me</p>
             <p className='inline-block border-b border-black'>
-              inathan44@yahoo.com
+              inathanxmail@gmail.com
             </p>
             <SocialIcons />
           </div>
