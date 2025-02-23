@@ -16,8 +16,6 @@ import aws from '../../assets/aws.png';
 import csharp from '../../assets/csharp.png';
 import { cn } from '../../lib/utils';
 
-// import '../../App.css';
-
 const logos: { logo: string; className: string }[] = [
   { logo: reactLogo, className: 'w-8' },
   { logo: typescriptLogo, className: 'w-8' },

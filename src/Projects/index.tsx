@@ -1,7 +1,7 @@
 import Project from './Project';
 import quickTypeImage from '../assets/typing-ss copy.png';
 import plantsImage from '../assets/plants-combined copy.png';
-import grizzImage from '../assets/DashboardScreenshot.png';
+import grizzImage from '../assets/grizz-dashboard-screenshot.png';
 
 const Projects = () => {
   return (
@@ -17,6 +17,7 @@ const Projects = () => {
         description='Lead generation SaaS platform to expedite sales prospecting through refined job listing searches, cutting prospecting process by over 90%'
         link='https://getgrizz.com/'
         image={grizzImage}
+        imageClasses='p-4 md:rounded-3xl -rotate-3'
         color='#F68080'
         buttonTextBlack={false}
       />

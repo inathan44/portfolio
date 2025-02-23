@@ -2,18 +2,18 @@ import React from 'react';
 import Skill from './Skill';
 
 const SKILLS = [
-  'React',
-  'JS',
+  'C#',
+  'Javascript',
   'Typescript',
+  'React',
   'SQL',
+  'Python',
   'AWS',
-  'Node',
   'HTML',
   'CSS',
-  'Python',
-  'Tailwind CSS',
-  'Web Development',
   'Express',
+  'Node',
+  'Web Development',
 ];
 
 const Skills = () => {
